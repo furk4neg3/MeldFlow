@@ -1,34 +1,33 @@
-# Code of Conduct
+# MeldFlow Code of Conduct
 
-We are committed to a welcoming, harassment-free community for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, experience level, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+> Personal project. Be kind, be inclusive, be professional. We enforce this in a lightweight, common‑sense way.
 
-## Our Standards
-Examples of behavior that contributes to a positive environment include:
-- Demonstrating empathy and kindness
-- Being respectful of differing opinions, viewpoints, and experiences
-- Giving and gracefully accepting constructive feedback
-- Focusing on what is best for the community
+## What’s expected
 
-Examples of unacceptable behavior include:
-- Harassment or trolling, and personal or political attacks
-- Public or private harassment, doxxing, or publishing others’ private information
-- Sexualized language or imagery; sexual attention or advances
-- Sustained disruption of discussions
+* Treat everyone with respect; assume good intent.
+* Use inclusive, professional language.
+* Welcome questions and give constructive feedback.
+* Keep conversations focused on the project.
+* Follow repo processes (issues/PRs/tests) and respect reviewer time.
 
-## Enforcement Responsibilities
-Project maintainers are responsible for clarifying and enforcing standards of acceptable behavior. They will take appropriate and fair corrective action in response to any behavior they deem inappropriate, threatening, offensive, or harmful.
+## Not okay
+
+* Harassment or discrimination of any kind.
+* Sexualized language/imagery or unwelcome advances.
+* Trolling, insults, personal attacks, or sustained disruption.
+* Sharing others’ private information without consent.
+* Spam or off‑topic promotion.
 
 ## Scope
-This Code applies in all community spaces and when an individual is officially representing the project.
 
-## Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the maintainers at **nizamfurkanegecan@gmail.com**. All complaints will be reviewed and investigated promptly and fairly.
+GitHub issues, PRs, discussions, and any project‑related spaces.
 
-## Enforcement Guidelines
-1. **Correction** – Private, written warning; requested change in behavior.
-2. **Warning** – Official warning; consequences for continued behavior.
-3. **Temporary Ban** – Temporary removal from community spaces.
-4. **Permanent Ban** – Permanent removal from community spaces.
+## Reporting & enforcement
+
+* Email **[nizamfurkanegecan@gmail.com](mailto:nizamfurkanegecan@gmail.com)** or open a private report.
+* The maintainer will review and may take action: **reminder → warning → temporary or permanent ban**.
+* No retaliation for good‑faith reports. Maintainer decisions aim to be fair and final.
 
 ## Attribution
-Portions adapted from the Contributor Covenant, version 2.1.
+
+Adapted in spirit from the Contributor Covenant.
