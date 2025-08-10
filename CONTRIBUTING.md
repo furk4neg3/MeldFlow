@@ -20,7 +20,7 @@ Thanks for taking the time to contribute! This is a personal project with a prof
 
 ```bash
 git clone https://github.com/furk4neg3/MeldFlow.git
-cd meldflow
+cd MeldFlow
 ```
 
 ### 2) Recommended: Docker workflow
