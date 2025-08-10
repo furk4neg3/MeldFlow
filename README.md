@@ -167,7 +167,6 @@ python scripts/infer_example.py --host http://127.0.0.1:8000 \
 ````bash
 docker build -t mm-analytics:latest .
 docker run -p 8000:8000 -v "$PWD":/app -e MM_CKPT=artifacts/best_model.pt mm-analytics
-```bash
 docker build -t meldflow .
 docker run -p 8000:8000 -e MM_CKPT=artifacts/best_model.pt meldflow
 ````
