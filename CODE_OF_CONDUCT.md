@@ -22,7 +22,7 @@ Project maintainers are responsible for clarifying and enforcing standards of ac
 This Code applies in all community spaces and when an individual is officially representing the project.
 
 ## Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the maintainers at **maintainers@your-org.example**. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the maintainers at **nizamfurkanegecan@gmail.com**. All complaints will be reviewed and investigated promptly and fairly.
 
 ## Enforcement Guidelines
 1. **Correction** – Private, written warning; requested change in behavior.
