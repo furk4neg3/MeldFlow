@@ -6,9 +6,9 @@ A production‑grade, extensible toolkit for training and serving multi‑modal 
 
 ---
 
-## Wh*y* MeldFlow?
+## *Why* MeldFlow?
 
-MeldFlow (formerly “Multi‑Modal Analytics Platform”) gives you a clean, batteries‑included path from ****data → training → checkpoints → APIs****. It supports missing modalities, configurable encoders, and a simple FastAPI service for low‑latency inference.
+MeldFlow (Multi‑Modal Analytics Platform) gives you a clean, batteries‑included path from ****data → training → checkpoints → APIs****. It supports missing modalities, configurable encoders, and a simple FastAPI service for low‑latency inference.
 
 ## Features
 
@@ -22,7 +22,7 @@ MeldFlow (formerly “Multi‑Modal Analytics Platform”) gives you a clean, ba
 
 ---
 
-## Quick test (1‑minute)
+## Quick test (Single Command)
 
 Run the entire smoke suite with a single command:
 
@@ -244,7 +244,7 @@ MeldFlow reads a single CSV with at least these columns:
 | `label`        | int/float      | target (class id or regression value)     |
 | `split`        | train/val/test | optional; otherwise ratios are used       |
 
-Rows with **all modalities missing** are automatically dropped.
+Rows with **all modalities missing** are automatically dropped. (Note: If you need an example dataset, please contact me.)
 
 ---
 
@@ -311,13 +311,11 @@ data/
 * Package version: see `mmplat/version.py` (e.g., `0.1.0`).
 * Current project name: **MeldFlow**. If you prefer to keep the `mmplat` package name for imports, that’s fine—the readme branding doesn’t break code.
 
-**Alternative name ideas:** Fusion Foundry, ModalFoundry, ConcatKit, TriFuse, AlloyML.
-
 ---
 
 ## License
 
-Choose a license and add a `LICENSE` file (MIT is a common choice for toolkits).
+Licensed under MIT License.
 
 ---
 
