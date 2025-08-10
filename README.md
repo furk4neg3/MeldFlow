@@ -321,28 +321,3 @@ Licensed under MIT License.
 ## Acknowledgments
 
 Built on PyTorch, torchvision, scikit‑learn, Hugging Face Transformers, and FastAPI.
-
----
-
-## Mermaid architecture
-
-```mermaid
-flowchart LR
-    A[Raw Inputs] -->|image| I[Image Preproc]
-    A -->|tabular| T[Tabular Preproc]
-    A -->|text| X[Text Preproc]
-
-    I --> IE[Image Encoder (ResNet*)]
-    T --> TE[Tabular Encoder (MLP)]
-    X --> XE[Text Encoder (Transformer/BOW)]
-
-    IE --> F[Fusion (Concat*)]
-    TE --> F
-    XE --> F
-
-    F --> H[Head (Cls/Reg)]
-    H --> O[Prediction + Confidence]
-
-    classDef dim fill:#f6f8fa,stroke:#d0d7de,stroke-width:1px;
-    class A,I,T,X,IE,TE,XE,F,H,O dim;
-```
