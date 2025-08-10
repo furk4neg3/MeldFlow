@@ -32,7 +32,7 @@ make test
 
 What this does:
 
-* Bootstraps a virtualenv if missing and installs deps.
+* Starts Docker and installs deps.
 * Generates a tiny synthetic dataset.
 * Runs unit tests and a fast train→infer smoke test on the multi‑modal pipeline.
 
@@ -244,7 +244,7 @@ MeldFlow reads a single CSV with at least these columns:
 | `label`        | int/float      | target (class id or regression value)     |
 | `split`        | train/val/test | optional; otherwise ratios are used       |
 
-Rows with **all modalities missing** are automatically dropped. (Note: If you need an example dataset, please contact me.)
+Rows with **all modalities missing** are automatically dropped.
 
 ---
 
