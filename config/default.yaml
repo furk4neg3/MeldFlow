@@ -1,0 +1,67 @@
+# Default configuration for Multi-Modal Analytics Platform
+
+seed: 1337
+task_type: "classification"     # "classification" or "regression"
+num_classes: 3                  # used for classification
+target_column: "label"
+split:
+  # if split_column provided in CSV (values: train/val/test), the script will use it
+  split_column: "split"
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+data:
+  csv_path: "data/synth/synth.csv"
+  image_root: "data/synth/images"
+  image_column: "image_path"
+  text_column: "text"
+  # tabular columns
+  num_cols: ["num_a", "num_b"]
+  cat_cols: ["cat_x"]
+  # optional: drop rows missing all modalities
+  drop_all_missing: true
+
+preprocessing:
+  image:
+    size: 224
+    normalize_mean: [0.485, 0.456, 0.406]
+    normalize_std:  [0.229, 0.224, 0.225]
+    augment: true
+  tabular:
+    # sklearn impute/scale/encode are automatic in pipeline
+    save_path: "artifacts/tabular_preproc.joblib"
+  text:
+    use_transformer: true
+    model_name: "distilbert-base-uncased"
+    max_length: 128
+    save_tokenizer: "artifacts/text_tokenizer"
+    use_bow_fallback: false
+
+model:
+  image_encoder:
+    name: "resnet18"
+    pretrained: true
+    out_dim: 128
+  tabular_encoder:
+    hidden_dims: [64, 64]
+    out_dim: 64
+    dropout: 0.1
+  text_encoder:
+    out_dim: 128
+  fusion:
+    type: "concat"
+  head:
+    hidden_dims: [128]
+    dropout: 0.1
+
+training:
+  batch_size: 8
+  num_epochs: 5
+  lr: 2e-4
+  weight_decay: 1e-4
+  num_workers: 2
+  patience: 3
+  save_dir: "artifacts"
+  best_ckpt: "artifacts/best_model.pt"
+  log_csv: "artifacts/train_log.csv"
